@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&family=Chewy&family=Outfit:wght@300;400;600&family=Poppins:wght@200;300;400&family=Raleway:wght@100;200;300&family=Roboto:wght@100;300&family=Signika+Negative:wght@300;400;500&family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+--body-bg: hsl(217, 54%, 11%);
+--card-bg: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: outfit;
+    background-color: var(--body-bg);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:350px;
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    color:rgba(255,255,255,0.4);
+    padding:1rem;
+}
+
+.image-container,.heading-div,ul{
+    width: 90%;
+    margin:0 auto;
+}
+.image-container{
+    position: relative;
+}
+.image-container img{
+    width:100%;
+    border-radius: .8rem; 
+}
+.image-container div{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 255, 255,.5);
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.image-container div:hover{
+    opacity: 1;
+}
+.image-container div img{
+    width:40px;
+}
+.heading-div h1{
+    color:var(--White);
+    padding:1rem 0;
+}
+.heading-div h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.first-flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 0;
+    
+}
+.first-flex li{
+    display: flex;
+    align-items: center;
+   
+}
+.first-flex li img{
+    padding-right:.5rem;
+}
+.first-flex li:first-child{
+    color:var(--Cyan);
+}
+.second-flex{
+    display: flex;
+    align-items: center;
+    border-top:1px solid var(--line);
+    padding:1rem 0;
+}
+.second-flex img{
+    width:40px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    margin-right:1rem;
+}
+.second-flex li span:hover{
+    color:var(--Cyan);
+    cursor: pointer;
+}
+.attribution a{
+    color:rgba(255,255,255,0.5);
+}
